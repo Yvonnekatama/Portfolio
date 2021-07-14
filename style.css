@@ -22,7 +22,14 @@ a{
     font-size: 15px;
     text-align: center;
     color: rgb(255,105,0);
-       
+      
+ }
+ .logo{
+     background-color: rgb(255,105,0);
+     width: 30px;
+     height: 30px;
+    
+
  }
  .about{
      height: 70vh;
