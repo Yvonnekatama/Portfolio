@@ -1,0 +1,89 @@
+body{
+    background-color:rgb(23,23,23);
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+.Nav{
+    position: fixed;
+    color: rgb(255,105,0);
+    height: 50px;
+    width: 100; 
+    margin-left: 62%;     
+}
+a{
+    padding:20px;
+    font-family: proxima-nova, sans-serif;
+    float: right;
+    text-decoration: none;
+    font-weight: lighter;
+    font-style:normal;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(255,105,0);
+       
+ }
+ .about{
+     height: 70vh;
+     background-color: whitesmoke;
+ }
+  
+#stop{
+    color: rgb(255,105,0);
+    font-size: 50px;
+}  
+.heading{
+    padding-top: 10%;
+    height: 70vh;
+    /* background-image: url("images/yvonne.png"); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+ 
+}
+h1{
+    color: whitesmoke;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    padding-top: 5px;}
+h3{
+    color:rgb(255,105,0);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-top: 50px;
+  
+}
+h2{
+    color: whitesmoke;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ a:hover{
+     color:whitesmoke;
+ }
+ 
+ #button{
+    margin:50px auto ;
+    height: 40px;
+    width: 120px;
+    font-size: 18px;
+    background-color: rgb(255, 105, 0);
+    color: whitesmoke;
+    border-radius: 10px;
+    border-color:rgb(255,105,0) ;
+    margin-left: 560px;
+    margin-bottom: 100px;
+  
+}
+#p1{
+color:rgb(23,23,23); 
+text-align: center;
+}
+#gkm{
+    color:rgb(255,105,0) ;
+   padding-top: 50px;
+}
