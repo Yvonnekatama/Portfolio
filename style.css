@@ -1,96 +1,242 @@
 body{
-    background-color:rgb(23,23,23);
-    background-repeat: no-repeat;
+   background-color:rgb(23,23,23) ;
     color: white;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: whitesmoke;
+}
+::-webkit-slider-thumb{
+    background:crimson ;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:crimson ;
 
 }
-
-.Nav{
-    position: fixed;
-    color: rgb(255,105,0);
-    height: 50px;
-    width: 100; 
-    margin-left: 62%;     
+html{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
 }
-a{
+  a{
     padding:20px;
-    font-family: proxima-nova, sans-serif;
-    float: right;
+    position: relative;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
     text-decoration: none;
-    font-weight: lighter;
-    font-style:normal;
-    font-size: 15px;
-    text-align: center;
-    color: rgb(255,105,0);
-      
+    color:whitesmoke;
+    transition: 0.5s; 
+   
  }
- .logo{
-     background-color: rgb(255,105,0);
-     width: 30px;
-     height: 30px;
-    
-
- }
- .about{
-     height: 70vh;
-     background-color: whitesmoke;
- }
-  
-#stop{
-    color: rgb(255,105,0);
-    font-size: 50px;
-}  
-.heading{
-    padding-top: 10%;
-    height: 70vh;
-    /* background-image: url("images/yvonne.png"); */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
  
+a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background:crimson;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+
+  }
+
+  a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    background-color: crimson;
+  }
+  a:hover{
+      color: whitesmoke;
+     
+  }
+  .navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke; 
+    
 }
-h1{
-    color: whitesmoke;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 36px;
-    padding-top: 5px;}
-h3{
-    color:rgb(255,105,0);
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    padding-top: 50px;
-  
+
+
+
+
+
+.brand-title {
+    font-size: 1rem;
+    margin: .5rem;
 }
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+   
+}
+.menu-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.menu-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+} 
+  .heading{
+    background-color:rgb(23,23,23);
+    padding-top: 10%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    text-align: center; 
+}
+
 h2{
     color: whitesmoke;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
- a:hover{
-     color:whitesmoke;
- }
- 
- #button{
-    margin:50px auto ;
-    height: 40px;
-    width: 120px;
-    font-size: 18px;
-    background-color: rgb(255, 105, 0);
-    color: whitesmoke;
-    border-radius: 10px;
-    border-color:rgb(255,105,0) ;
-    margin-left: 560px;
-    margin-bottom: 100px;
-  
+h1{
+    color: crimson;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
 }
-#p1{
+span{
+    color: crimson;
+}
+.skill{
+    color:crimson ;
+    margin-bottom: auto;
+    padding-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.about{
+    height: 100vh;
+    background-color: whitesmoke;
+    margin-top: 300;
+}
+progress[value] {
+    width: 300px;
+    height: 10px;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress[value]::-webkit-progress-value{
+    background-color: crimson;
+}
+
+progress::-webkit-progress-bar {
+    background-color: crimson;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto auto;  
+}
+label{
+    color: black;
+}
+
+.item {
+    /* padding: 5px; */
+    font-size: 30px;
+    text-align: left;
+}
+#p1{                                                                                                        
 color:rgb(23,23,23); 
 text-align: center;
+font-family: 'Montserrat', sans-serif;
+
 }
 #gkm{
-    color:rgb(255,105,0) ;
-   padding-top: 50px;
+    color:crimson ;
+   padding-top: 30px;
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+
+} 
+.cta{
+    border: 10px;
 }
+.projects{
+    height: 100vh; 
+    
+}
+#pro{
+    text-align: center;
+    color: crimson ;
+    margin-top: 12%;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+ 
