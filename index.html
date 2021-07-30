@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6e74df817d.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,72 +19,107 @@
 
     <body>
         <nav class="navbar">
+
             <div class="brand-title">Portfolio<span></span><span>2021.</span></div>
             <a href="#" class="menu-button">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </a>
             <div class="navbar-links">
-              <ul>
-                <li><a href="#Index.html">Home</a></li>
-                <li><a href="#About.html">About</a></li>
-                <li><a href="#Projects.html">Projects</a></li>
-                <li><a href="Contacts.html">Contact</a></li>
-              </ul>
+                <ul>
+                    <li><a id= "top"href="#Index.html">HOME</a></li>
+                    <li><a id= "top"href="#About.html">ABOUT</a></li>
+                    <li><a id= "top"href="#Projects.html">PROJECTS</a></li>
+                    <li><a id= "top"href="#Contacts.html">CONTACT</a></li>
+                </ul>
             </div>
-          </nav>
+        </nav>
 
         <div class="heading">
-            <h2>Yvonne Mnyazi Katama,</h2>
-            <h1>UI/UX DESIGNER|DEVELOPER</h1>
+            <h2 class="tag">Yvonne Mnyazi Katama</h2>
+            <h1 class="tag">JUNIOR UI/UX DESIGNER</h1>
         </div>
-         <!-- About Section -->
- 
-         <div id="About.html" class="about">
-            <h2 id="gkm">Get To Know Me.</h2>
-            <p id="p1"> 
-                Yvonne an aspiring designer|developer passionate about creating user experiences that are seamless and impactful.<br> 
-                Understanding the human experience is essential for creating useful and effective products.
-                She believes that user<br> research is the most important step of the design process.
-                Taking time to understand a problem from all angles,<br>collecting and analyzing data using the right methodologies,
-                and finding evidence-based solutions.<br>With an eye for graphics, typography, layout, and color she loves building functional
-                software<br> and mobile products and infusing modern aesthetics Figma, Framer,and<br> Adobe Illustrator to wireframe and prototype designs.</p> 
-               
-        <h3 class="skill">SKILLS</h3>
-        <div class="skills">
-            <div class="container" class="h" style="text-align: left; margin-left: 20%;">
-                <div class="item">
-                    <label for="fig" style="font-size: 15px; ">Figma</label><br><progress id="fig" value="100"
-                        max="100"></progress>
-                </div>
-                <div class="item ">
-                    <label for="AP" style="font-size: 15px; ">Adobe Photoshop</label><br><progress id="AP" value="100"
-                        max="100"></progress>
-                </div>
-                <div class="item">
-                    <label for="Framer" style="font-size: 15px; ">Framer</label><br><progress id="Framer" value="100"
-                        max="100"></progress>
-                </div>
-                <div class="item">
-                    <label for="HT" style="font-size: 15px; ">HTML5</label><br><progress id="html" value="100"
-                        max="100"></progress>
-                </div>
-                <div class="item">
-                    <label for="AI" style=" font-size: 15px; ">Adobe Illustrator</label><br><progress id="AI" value="100"
-                        max="100"></progress>
-                </div>
-                <div class="item">
-                    <label for="CSS" style=" font-size: 15px; ">CSS</label><br><progress id="CSS" value="100"
-                        max="100"></progress>
-                        <!-- <a href="#" class="cta">Resume</a> -->
+        <!-- About Section -->
 
+        <div id="About.html" class="about">
+            <h2 id="gkm">Get To Know Me</h2>
+            <p id="p1">
+                Yvonne is an aspiring designer|developer passionate about creating user experiences that are seamless and
+                impactful.<br> Her understanding of human experience is essential for her to create useful and effective
+                products.<br>
+                She believes that user research is the most important step of the design process.<br>
+                Taking time to understand a problem from all angles,collecting and analyzing data using the right
+                methodologies,<br>
+                and finding evidence-based solutions.With an eye for graphics, typography, layout, and color she
+                loves<br> building functional
+                software and mobile products and infusing modern aesthetics Figma, Framer,and<br> Adobe Illustrator
+                to wireframe and prototype designs.</p>
+
+            <h3 class="skill">Skills</h3>
+            <div class="skills">
+                <div class="container" class="h" style="text-align: left; margin-left: 20%;">
+                    <div class="item">
+                        <label for="fig" style="font-size: 15px; ">Figma</label><br><progress id="fig" value="100"
+                            max="100"></progress>
+                    </div>
+                    <div class="item ">
+                        <label for="AP" style="font-size: 15px; ">Adobe Photoshop</label><br><progress id="AP"
+                            value="100" max="100"></progress>
+                    </div>
+                    <div class="item">
+                        <label for="Framer" style="font-size: 15px; ">Framer</label><br><progress id="Framer"
+                            value="100" max="100"></progress>
+                    </div>
+                    <div class="item">
+                        <label for="HT" style="font-size: 15px; ">HTML5</label><br><progress id="html" value="100"
+                            max="100"></progress>
+                    </div>
+                    <div class="item">
+                        <label for="AI" style=" font-size: 15px; ">Adobe Illustrator</label><br><progress id="AI"
+                            value="100" max="100"></progress>
+                    </div>
+                    <div class="item">
+                        <label for="CSS" style=" font-size: 15px; ">CSS</label><br><progress id="CSS" value="100"
+                            max="100"></progress><br>
+                        <button class="cta">RESUME</button>
+
+                    </div>
                 </div>
             </div>
-        </div>
+            <!-- PROJECTS -->
+            <div id="Projects.html" class="projects">
+                <h2 id="pro">PROJECTS</h2>
+                <div class="work">
+
+                    <img class="gg" src="images/Desktop - 1 (23).png">
+                    <img class="vogue" src="images/Feel the beat.png">
+                    <img class="zuri" src="images/Desktop - 1 (26).png">
+
+                </div>
+                <div class="title">
+
+                    <h3>Glam-gram</h3>
+                    <h3>DailyUI Challenges</h3>
+                    <h3>Zuri Galore</h3>
+                   
+                </div>
+
+            </div>
+            <div id="Contacts.html" class="contact">
+                <h2 class="git">CONTACT</h2>
+                <p>Let's get in touch:</p>
+                <div class="social-menu">
     
-        <div id="Projects.html" class="projects">
-            <h2 id="pro">Projects</h2>
-            <p></p>
-            <p></p>
-        </div>
+                    <ul id="icons">
+
+                      <li><a href="https://twitter.com/MnyaziK"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="https://www.behance.net/katamayvonne"><i class="fa fa-behance"></i></a></li>
+                      <li><a href="https://dribbble.com/Katama"><i class="fa fa-dribbble"></i></a></li>
+                      <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                  <hr>
+                  <p>&copy KatamaYvonne 2021.</p>
+
+            </div>
