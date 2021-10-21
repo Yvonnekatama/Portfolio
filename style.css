@@ -160,15 +160,49 @@ html{
 
 h2{
     color: whitesmoke;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
 }
 
-h1{
+/* h1{
     color: crimson;
     font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
+} */
+.tagg{
+    color: crimson;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif; 
+    position: relative;
+    top: 50%;
+    width: 21em;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
 }
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+      blinkTextCursor 500ms steps(44) infinite normal;
+    top: 25px;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 21em;
+    }
+  }
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color:crimson;
+    }
+    to {
+      border-right-color:crimson;
+    }
+  }
 
 span{
     color: crimson;
@@ -242,7 +276,9 @@ position: absolute ;
     background-color: crimson;
     color: whitesmoke;   
 }
-/* Projects Page */
+/* Projects Page  */
+
+   
 .projects{
     height: 70vh; 
     
@@ -269,10 +305,14 @@ position: absolute ;
     justify-content: space-around;
     color: crimson;
     
-}  
+}   
+
+
+
+
 /* contact page */
-.contact{
-    height: 38.4vh; 
+ .contact{
+    height: 50vh; 
     background-color: whitesmoke;
     color:rgb(23,23,23) ;
     text-align: center;
@@ -297,7 +337,7 @@ hr{
         margin-bottom: 0;
         display: flex;
         margin-left: 58%;
-        margin-top:3%;
+        margin-top:5%;
     }
     .social-menu ul li {
         list-style: none;
@@ -312,7 +352,7 @@ hr{
     }
     #icons{
         text-decoration: none;
-    }
+     }
     .social-menu ul li .fa:hover {
         color: #ffffff;
     }
@@ -323,8 +363,8 @@ hr{
         text-align: center;
         transition: 0.5s;
         transform: translate(0,0px);
-        /* box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5); */
-    }
+         box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5); 
+     } 
     .social-menu ul li a:hover {
         transform: rotate(0deg) skew(0deg) translate(0, -10px);
     }
@@ -344,8 +384,38 @@ hr{
         
         color:grey;
         margin-top: -1.5%;
-       
-   
-       
-    
+
     }
+    /* .cd-top--is-visible { 
+        visibility: visible;
+        opacity: 1;
+      }
+      
+      .cd-top--fade-out { 
+        opacity: .5;
+    }
+    .cd-top{
+        margin-left: 95%;
+    } */
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color:crimson;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+      
+      #myBtn:hover {
+        background-color:black;
+        color: crimson;
+        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5); 
+       
+      }
